@@ -35,6 +35,13 @@ body {
   left: 0
 }
 
+#bars {
+  position: absolute;
+  right: 10px;
+  top: 15px
+}
+
+
 
 #contentA {
   background-color: #222222;
