@@ -7,7 +7,11 @@ window.addEventListener('DOMContentLoaded', (e) => {
 
   if (isMobile === true ) {
     document.querySelector('#bars').addEventListener('click', (e) => {
-      console.log('clicked!');
+      document.querySelector('#bars').classList.toggle("clicked-bars")
+      document.querySelector('#dropdown').classList.toggle('clicked-dropdown')
+      document.querySelectorAll('.dropdown-item').forEach( (item) => {
+        item.classList.toggle('clicked-dropdown-item')
+      })
     })
   }
 
