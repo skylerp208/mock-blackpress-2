@@ -7,8 +7,14 @@ window.addEventListener('DOMContentLoaded', (e) => {
 
   if (isMobile === true ) {
     document.querySelector('#bars').addEventListener('click', (e) => {
-      document.querySelector('#bars').classList.toggle("clicked-bars")
-      document.querySelector('#dropdown').classList.toggle('clicked-dropdown')
+      // document.querySelector('#bars').classList.toggle("clicked-bars")
+      if ( document.querySelector('#dropdown').classList[0] === "clicked-dropdown" ) {
+          document.querySelector('#dropdown').classList.toggle('unclicked-dropdown')
+      } else {
+          document.querySelector('#dropdown').classList.toggle('clicked-dropdown')
+      }
+
+
       document.querySelectorAll('.dropdown-item').forEach( (item) => {
         item.classList.toggle('clicked-dropdown-item')
       })

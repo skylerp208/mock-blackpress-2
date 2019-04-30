@@ -4,7 +4,10 @@
 
 body {
   margin: 0;
+  min-height: 100vh;
+  position: relative
 }
+
 
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
@@ -42,36 +45,44 @@ body {
   padding: 10px
 }
 
-.clicked-bars {
-  background-color: grey;
-  color: white
-}
-
 #dropdown {
   position: absolute;
-  right: 10px;
-  top: 40px;
+  right: -1px;
+  top: 49px;
   z-index: 5;
   width: 100px;
-  transition: height 300ms ease-in-out, background-color 100ms ease-in-out
 }
 
 .clicked-dropdown {
   height: 115px;
   width: 100px;
-  background-color: grey;
+  background-color: white;
   animation-name: drop;
-  animation-duration: 300ms
+  animation-duration: 300ms;
+}
+
+.unclicked-dropdown {
+  animation-name: undrop;
+  animation-duration: 300ms;
+  height: 0px;
+  width: 100px;
+  background-color: white
 }
 
 @keyframes drop {
-  0% {height: 0px};
-  100% {height: 115px}
+  0% { height: 0px };
+  100% { height: 115px }
 }
+
+@keyframes undrop {
+  0% { height: 115px };
+  100% { height: 0px }
+}
+
 
 .dropdown-item {
   text-decoration: none;
-  color: white;
+  color: #222222;
   font-family: 'Open Sans', sans-serif;
   display: block;
   text-align: right;
@@ -79,7 +90,7 @@ body {
   right: 10px;
   padding-top: 5px;
   opacity: 0;
-  transition: opacity 400ms ease
+  transition: opacity 200ms ease
 }
 
 .clicked-dropdown-item {
@@ -90,7 +101,7 @@ body {
   height: 250px;
   position: relative;
   color: white;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 #who {
@@ -99,6 +110,7 @@ body {
   top: 8%;
   width: 100%;
   text-align: center;
+  font-weight: bold
 }
 
 #mission {
@@ -123,7 +135,7 @@ body {
   position: absolute;
   top: 70%;
   padding: 5px 25px 5px 25px;
-  border: 1px solid white;
+  /* border: 1px solid white; */
   border-radius: 5px;
   font-size: 15px;
   text-align: center;
@@ -140,8 +152,8 @@ body {
 
 #contentB {
   color: black;
-  height: 380px;
-  font-family: 'Open Sans', sans-serif;
+  height: 300px;
+  font-family: 'Montserrat', sans-serif;
   position: relative
 }
 
@@ -151,6 +163,7 @@ body {
   top: 8%;
   width: 100%;
   text-align: center;
+  font-weight: bold
 }
 
 #lineB {
@@ -174,9 +187,9 @@ body {
   text-decoration: none;
   position: absolute;
   color: black;
-  top: 70%;
+  bottom: 15px;
   padding: 5px 25px 5px 25px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   border-radius: 5px;
   font-size: 15px;
   text-align: center;
@@ -224,6 +237,29 @@ h3 {
 
 #logo-two {
   position: absolute;
-  right: 20px;
-  top: 20px
+  right: 10px;
+  top: 10px
+}
+
+.social {
+  font-size: 30px;
+  position: relative;
+  left: 255px;
+  bottom: 170px;
+  padding: 2px;
+  width: 28px;
+  text-align: center
+}
+
+#rights {
+  position: absolute;
+  bottom: 0%;
+  font-family: "Open Sans", sans-serif;
+  width: 100%;
+  font-size: 10px;
+  text-align: center;
+  background-color: #222222;
+  color: white;
+  height: 20px;
+  padding: 2px
 }
