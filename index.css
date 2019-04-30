@@ -99,7 +99,6 @@ body {
   top: 8%;
   width: 100%;
   text-align: center;
-
 }
 
 #mission {
@@ -137,4 +136,94 @@ body {
 
 #latte_art {
   padding: 5px 0px 5px 0px
+}
+
+#contentB {
+  color: black;
+  height: 380px;
+  font-family: 'Open Sans', sans-serif;
+  position: relative
+}
+
+#coffee-header {
+  position: absolute;
+  font-size: 20px;
+  top: 8%;
+  width: 100%;
+  text-align: center;
+}
+
+#lineB {
+  position: absolute;
+  top: 22%;
+  width: 10%;
+  left: 45%;
+  border: 1px solid black
+}
+
+#our-coffee {
+  position: absolute;
+  top: 28%;
+  font-size: 15px;
+  text-align: center;
+  width: 100%;
+  padding: 0px 10px 0px 10px
+}
+
+#about-coffee {
+  text-decoration: none;
+  position: absolute;
+  color: black;
+  top: 70%;
+  padding: 5px 25px 5px 25px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 15px;
+  text-align: center;
+  margin: 0px 102px 0px 102px;
+}
+
+#contentC {
+  color: black;
+  height: 380px;
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+  background-color: #F0F0F0
+}
+
+h3 {
+  position: relative;
+  left: 10px;
+  margin-bottom: 10px;
+  top: 10px
+}
+
+#locA {
+  list-style: none;
+  position: relative;
+  left: 10px
+}
+
+#locB {
+  list-style: none;
+  position: relative;
+  left: 10px;
+  top: 15px
+}
+
+#hours-header {
+  position: relative;
+  top: 10px
+}
+
+#hours-list {
+  list-style: none;
+  position: relative;
+  left: 10px;
+}
+
+#logo-two {
+  position: absolute;
+  right: 20px;
+  top: 20px
 }
