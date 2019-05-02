@@ -1,10 +1,14 @@
+
+
 * {
   box-sizing: border-box;
 }
 
+
 body {
   margin: 0;
   min-height: 100vh;
+  min-width: 100vw;
   position: relative
 }
 
@@ -26,6 +30,10 @@ body {
   [class*="col-"] {
     width: 100%;
   }
+}
+
+.hidden {
+  display: none
 }
 
 .nav {
@@ -90,7 +98,7 @@ body {
   right: 10px;
   padding-top: 5px;
   opacity: 0;
-  transition: opacity 200ms ease
+  transition: opacity 400ms ease
 }
 
 .clicked-dropdown-item {
@@ -204,11 +212,109 @@ body {
   background-color: #F0F0F0
 }
 
+#aboutA {
+  background-color: #222222;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  height: 600px;
+  position: relative
+}
+
+#our-coffee-b {
+  position: relative;
+  font-size: 20px;
+  text-align: left;
+  top: 5%;
+  left: 5%;
+  font-weight: bold
+}
+
+#coffee-blurb {
+  position: relative;
+  text-align: left;
+  top: 10%;
+  left: 5%;
+  line-height: 20px;
+  width: 90%;
+  font-size: 15px
+}
+
+#coffee-blurb-b {
+  position: relative;
+  text-align: left;
+  top: 15%;
+  left: 5%;
+  line-height: 20px;
+  width: 90%;
+  font-size: 15px
+}
+
+#parlor-pic {
+  position: absolute;
+  left: 5%;
+  bottom: 10px
+}
+
+.parlor-container {
+  background-color: #f0f0f0;
+  position: relative;
+  margin: 10px 0px 10px 0px;
+  font-family: 'Montserrat', sans-serif;
+  height: 280px
+}
+.parlor-container-b {
+  background-color: #f0f0f0;
+  position: relative;
+  margin: 10px 0px 10px 0px;
+  font-family: 'Montserrat', sans-serif;
+  height: 200px
+}
+.parlor-container-c {
+  background-color: #f0f0f0;
+  position: relative;
+  margin: 10px 0px 10px 0px;
+  font-family: 'Montserrat', sans-serif;
+  height: 250px
+}
+
+.coffee-name {
+  position: relative;
+  top: 5%;
+  left: 5%;
+  font-size: 20px
+}
+
+.coffee-desc {
+  position: relative;
+  top: 10%;
+  left: 5%;
+  font-size: 15px;
+  width: 90%
+}
+
+.components-header {
+  font-size: 18px;
+  position: relative;
+  top: 15%;
+  left: 5%
+}
+
+.component {
+  list-style: none;
+  position: relative;
+  top: 20%;
+  left: 10%
+}
+
 h3 {
   position: relative;
   left: 10px;
   margin-bottom: 10px;
   top: 10px
+}
+
+#locations {
+  margin-top: 0px
 }
 
 #locA {
@@ -244,8 +350,8 @@ h3 {
 .social {
   font-size: 30px;
   position: relative;
-  left: 255px;
-  bottom: 170px;
+  left: 260px;
+  bottom: 165px;
   padding: 2px;
   width: 28px;
   text-align: center
