@@ -69,11 +69,11 @@ body {
   right: 10px;
   top: 53px;
   z-index: 5;
-  width: 100px;
+  width: 340px;
 }
 
 .clicked-dropdown {
-  height: 115px;
+  height: 28px;
   width: 90px;
   background-color: #333333;
   animation-name: drop;
@@ -86,16 +86,16 @@ body {
   animation-duration: 300ms;
   height: 0px;
   width: 100px;
-  background-color: #333333
+  background-color: #333333;
 }
 
 @keyframes drop {
   0% { height: 0px };
-  100% { height: 115px }
+  100% { height: 40px }
 }
 
 @keyframes undrop {
-  0% { height: 115px };
+  0% { height: 28px };
   100% { height: 0px }
 }
 
@@ -104,10 +104,11 @@ body {
   text-decoration: none;
   color: white;
   font-family: 'Roboto Mono', monospace;
-  display: block;
+  display: inline;
   text-align: right;
   position: relative;
-  right: 10px;
+  left: 10px;
+  top: 2px;
   padding-top: 5px;
   opacity: 0;
   transition: opacity 400ms ease
@@ -115,6 +116,10 @@ body {
 
 .clicked-dropdown-item {
   opacity: 1
+}
+
+#about-container {
+  font-weight: lighter
 }
 
 #coffee-header {
@@ -134,47 +139,26 @@ body {
   border: 1px solid black
 }
 
-#our-coffee {
-  position: absolute;
-  top: 28%;
-  font-size: 15px;
-  text-align: center;
-  width: 100%;
-  padding: 0px 10px 0px 10px
-}
-
-#about-coffee {
-  text-decoration: none;
-  position: absolute;
-  top: 75%;
-  color: white;
-  bottom: 15px;
-  padding: 5px 25px 5px 25px;
-  /* border: 1px solid black; */
-  border-radius: 5px;
-  font-size: 15px;
-  text-align: center;
-  margin: 0px 102px 0px 102px;
-}
 
 #contentC {
   color: black;
   height: 500px;
   position: relative;
   background-color: #fff;
+  padding-top: 30px
 }
 
 #aboutA {
   background-color: #222222;
   color: white;
   font-family: 'Roboto Mono', monospace;
-  height: 600px;
+  height: 620px;
   position: relative
 }
 
 #our-coffee-b {
   position: relative;
-  font-size: 20px;
+  font-size: 18px;
   text-align: left;
   top: 5%;
   left: 5%;
@@ -184,27 +168,27 @@ body {
 #coffee-blurb {
   position: relative;
   text-align: left;
-  top: 10%;
+  top: 8%;
   left: 5%;
   line-height: 20px;
   width: 90%;
-  font-size: 15px
+  font-size: 13px
 }
 
 #coffee-blurb-b {
   position: relative;
   text-align: left;
-  top: 15%;
+  top: 12%;
   left: 5%;
   line-height: 20px;
   width: 90%;
-  font-size: 15px
+  font-size: 13px
 }
 
 #parlor-pic {
   position: absolute;
   left: 5%;
-  bottom: 10px
+  bottom: 15px
 }
 
 .parlor-container {
@@ -219,7 +203,7 @@ body {
   position: relative;
   margin: 10px 0px 10px 0px;
   font-family: 'Roboto Mono', monospace;
-  height: 200px
+  height: 150px
 }
 .parlor-container-c {
   background-color: #f0f0f0;
@@ -232,23 +216,23 @@ body {
 .white-container {
   background-color: #fff;
   position: relative;
-  margin: 10px 0px 10px 0px;
+  margin: 10px 0px 0px 0px;
   font-family: 'Roboto Mono', monospace;
-  height: 200px
+  height: 180px
 }
 
 .coffee-name {
   position: relative;
   top: 5%;
   left: 5%;
-  font-size: 20px
+  font-size: 18px
 }
 
 .coffee-desc {
   position: relative;
   top: 10%;
   left: 5%;
-  font-size: 15px;
+  font-size: 13px;
   width: 90%
 }
 
@@ -269,7 +253,7 @@ body {
 h3 {
   position: relative;
   left: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   top: 10px;
 }
 
