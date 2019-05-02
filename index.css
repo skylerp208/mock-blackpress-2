@@ -4,12 +4,15 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow-x: hidden;
+}
 
 body {
   margin: 0;
   min-height: 100vh;
   min-width: 100vw;
-  position: relative
+  position: relative;
 }
 
 
@@ -106,7 +109,7 @@ body {
 }
 #contentA {
   background-color: #222222;
-  height: 250px;
+  height: 300px;
   position: relative;
   color: white;
   font-family: 'Montserrat', sans-serif;
@@ -159,10 +162,12 @@ body {
 }
 
 #contentB {
-  color: black;
+  color: white;
+  background-color: #222222;
   height: 300px;
   font-family: 'Montserrat', sans-serif;
-  position: relative
+  position: relative;
+  margin-bottom: 5px
 }
 
 #coffee-header {
@@ -194,7 +199,8 @@ body {
 #about-coffee {
   text-decoration: none;
   position: absolute;
-  color: black;
+  top: 75%;
+  color: white;
   bottom: 15px;
   padding: 5px 25px 5px 25px;
   /* border: 1px solid black; */
@@ -275,6 +281,14 @@ body {
   margin: 10px 0px 10px 0px;
   font-family: 'Montserrat', sans-serif;
   height: 250px
+}
+
+.white-container {
+  background-color: #fff;
+  position: relative;
+  margin: 10px 0px 10px 0px;
+  font-family: 'Montserrat', sans-serif;
+  height: 200px
 }
 
 .coffee-name {
