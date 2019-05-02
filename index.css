@@ -41,7 +41,8 @@ body {
 
 .nav {
   position: relative;
-  height: 50px;
+  height: 80px;
+  padding: 10px
 }
 
 #logo {
@@ -49,27 +50,35 @@ body {
   left: 0
 }
 
+#nav-underline {
+  position: relative;
+  top: 35px;
+  z-index: 4;
+  border: 1px solid #333333
+}
+
 #bars {
   position: absolute;
   right: 10px;
-  top: 7px;
+  top: 16px;
   padding: 10px
 }
 
 #dropdown {
   position: absolute;
-  right: -1px;
-  top: 49px;
+  right: 10px;
+  top: 53px;
   z-index: 5;
   width: 100px;
 }
 
 .clicked-dropdown {
   height: 115px;
-  width: 100px;
-  background-color: white;
+  width: 90px;
+  background-color: #333333;
   animation-name: drop;
   animation-duration: 300ms;
+  z-index: 20
 }
 
 .unclicked-dropdown {
@@ -77,7 +86,7 @@ body {
   animation-duration: 300ms;
   height: 0px;
   width: 100px;
-  background-color: white
+  background-color: #333333
 }
 
 @keyframes drop {
@@ -93,8 +102,8 @@ body {
 
 .dropdown-item {
   text-decoration: none;
-  color: #222222;
-  font-family: 'Open Sans', sans-serif;
+  color: white;
+  font-family: 'Roboto Mono', monospace;
   display: block;
   text-align: right;
   position: relative;
@@ -106,68 +115,6 @@ body {
 
 .clicked-dropdown-item {
   opacity: 1
-}
-#contentA {
-  background-color: #222222;
-  height: 300px;
-  position: relative;
-  color: white;
-  font-family: 'Montserrat', sans-serif;
-}
-
-#who {
-  position: absolute;
-  font-size: 20px;
-  top: 8%;
-  width: 100%;
-  text-align: center;
-  font-weight: bold
-}
-
-#mission {
-  position: absolute;
-  top: 28%;
-  font-size: 15px;
-  text-align: center;
-  width: 100%;
-  padding: 0px 10px 0px 10px
-}
-
-#lineA {
-  position: absolute;
-  top: 22%;
-  width: 10%;
-  left: 45%;
-}
-
-#about-link {
-  text-decoration: none;
-  color: white;
-  position: absolute;
-  top: 70%;
-  padding: 5px 25px 5px 25px;
-  /* border: 1px solid white; */
-  border-radius: 5px;
-  font-size: 15px;
-  text-align: center;
-  margin: 0px 102px 0px 102px
-}
-
-#about-link:active {
-  background-color: rgba(255, 255, 255, 0.5);
-}
-
-#latte_art {
-  padding: 5px 0px 5px 0px
-}
-
-#contentB {
-  color: white;
-  background-color: #222222;
-  height: 300px;
-  font-family: 'Montserrat', sans-serif;
-  position: relative;
-  margin-bottom: 5px
 }
 
 #coffee-header {
@@ -212,16 +159,15 @@ body {
 
 #contentC {
   color: black;
-  height: 380px;
-  font-family: 'Open Sans', sans-serif;
+  height: 500px;
   position: relative;
-  background-color: #F0F0F0
+  background-color: #fff;
 }
 
 #aboutA {
   background-color: #222222;
   color: white;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto Mono', monospace;
   height: 600px;
   position: relative
 }
@@ -265,21 +211,21 @@ body {
   background-color: #f0f0f0;
   position: relative;
   margin: 10px 0px 10px 0px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto Mono', monospace;
   height: 280px
 }
 .parlor-container-b {
   background-color: #f0f0f0;
   position: relative;
   margin: 10px 0px 10px 0px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto Mono', monospace;
   height: 200px
 }
 .parlor-container-c {
   background-color: #f0f0f0;
   position: relative;
   margin: 10px 0px 10px 0px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto Mono', monospace;
   height: 250px
 }
 
@@ -287,7 +233,7 @@ body {
   background-color: #fff;
   position: relative;
   margin: 10px 0px 10px 0px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto Mono', monospace;
   height: 200px
 }
 
@@ -324,35 +270,53 @@ h3 {
   position: relative;
   left: 10px;
   margin-bottom: 10px;
-  top: 10px
+  top: 10px;
 }
 
 #locations {
-  margin-top: 0px
+  margin-top: 0px;
+  text-align: center;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 100
 }
 
 #locA {
   list-style: none;
   position: relative;
-  left: 10px
+  left: 10px;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 100;
+  font-size: 13px;
+  text-align: center
 }
 
 #locB {
   list-style: none;
   position: relative;
   left: 10px;
-  top: 15px
+  top: 12px;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 100;
+  font-size: 13px;
+  text-align: center
 }
 
 #hours-header {
   position: relative;
-  top: 10px
+  top: 10px;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: lighter;
+  text-align: center
 }
 
 #hours-list {
   list-style: none;
   position: relative;
   left: 10px;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: lighter;
+  font-size: 13px;
+  text-align: center
 }
 
 #logo-two {
@@ -361,14 +325,20 @@ h3 {
   top: 10px
 }
 
+#follow-us {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: lighter;
+  text-align: center
+}
+
 .social {
   font-size: 30px;
   position: relative;
-  left: 260px;
-  bottom: 165px;
+  top: 20px;
   padding: 2px;
   width: 28px;
-  text-align: center
+  text-align: center;
+  left: 135px
 }
 
 #rights {

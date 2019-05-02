@@ -3,7 +3,7 @@
     <title> Mock Blackpress </title>
     <link rel="stylesheet" href=index.css>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src = "./src/index.js"> </script>
@@ -14,6 +14,7 @@
     <div class = "col-12 nav">
       <img src = "./black_press_logo.webp" width = 90% id = logo>
       <i class="fas fa-bars" id =bars > </i>
+      <hr id = nav-underline />
       <div id = dropdown>
         <a href = '' class = 'dropdown-item' id = home-link> Home </a>
         <a href = '' class = 'dropdown-item' id = about-drop> About </a>
@@ -22,22 +23,9 @@
       </div>
     </div>
     <div id = 'home-container'>
-    <div class = 'col-12' id = 'contentA'>
-      <div id=who > Who we are </div>
-      <hr id = lineA>
-      <p id = mission> Black Press Coffee is a specialty coffee shop with a simple mission: awesome coffee and great service. </p>
-      <a href='' id=about-link> More about us </a>
+
+      <img src = './home_image.png' width = 100% id = latte_art>
     </div>
-      <img src = ./cofeeee.jpg width = 100% id = latte_art>
-    <div class = 'col-12' id = 'contentB'>
-      <div id= coffee-header> Our Coffee </div>
-      <hr id = lineB>
-      <p  id= our-coffee> We constantly sample coffees from different farmers providing you with a curated selection from the producers who share our passion for quality. We partner with Parlor our roaster in Brooklyn, to bring the best coffee we can to the heart of New York.
-      </p>
-      <a href='' id=about-coffee> More about our coffee </a>
-    </div>
-    <img src = './beansss.jpg' width = 100% id = beans-pic>
-  </div>
 
   <div id = about-container class = hidden >
     <div id = aboutA>
@@ -109,7 +97,7 @@
         <li>M - F : 7am - 7PM </li>
         <li> Sat - Sun :  8am - 6PM </li>
       </div>
-      <img src = './bp_logo_two.webp' width = 25% id = logo-two>
+      <h3 id = follow-us> Follow Blackpress </h3>
       <i class="fab fa-facebook-f social" id = facebook></i>
       <i class="fab fa-yelp social" id = yelp></i>
       <i class="fab fa-instagram social" id = instagram></i>
