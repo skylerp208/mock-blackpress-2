@@ -29,11 +29,6 @@ body {
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
-@media only screen and (max-width: 768px) {
-  [class*="col-"] {
-    width: 100%;
-  }
-}
 
 .hidden {
   display: none
@@ -47,7 +42,8 @@ body {
 
 #logo {
   position: absolute;
-  left: 0
+  left: 0;
+  width: 90%
 }
 
 #nav-underline {
@@ -115,6 +111,20 @@ body {
 
 .clicked-dropdown-item {
   opacity: 1
+}
+
+@media all and (min-width: 1000px) {
+  #logo {
+    width: 40%;
+    position: relative;
+    left: 22.5%
+  }
+
+  #latte_art {
+    width: 50%;
+    position: relative;
+    left: 25%
+  }
 }
 
 #about-container {
