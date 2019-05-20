@@ -48,7 +48,7 @@ body {
 
 #nav-underline {
   position: relative;
-  top: 35px;
+  top: 70%;
   z-index: 4;
   border: 1px solid #333333
 }
@@ -63,7 +63,7 @@ body {
 #dropdown {
   position: absolute;
   right: 10px;
-  top: 88%;
+  top: 72.5%;
   z-index: 5;
   width: 90px;
   pointer-events: none
@@ -145,16 +145,15 @@ body {
     font-size: 22px;
   }
 
-  /* #dropdown {
-    position: absolute;
+  .dropdown-item {
+    font-size: 18px
+  }
+
+  #dropdown{
+    width: 120px;
+    top: 88.5%;
     right: 17.5%;
-    top: 88%;
-    z-index: 5;
-    width: 10px;
-    height: 0px;
-    background-color: black;
-    pointer-events: none;
-  } */
+  }
 
 }
 
@@ -286,21 +285,22 @@ body {
 @media all and (min-width: 1000px) {
 
   #aboutA {
-    width: 90%;
-    left: 5%;
-    height: 600px
+    width: 65%;
+    left: 17.5%;
+    height: 400px
   }
   #our-coffee-b{
-    font-size: 25px
+    font-size: 25px;
+    display: none
   }
   #coffee-blurb{
     width: 40%;
-    font-size: 18px;
+    font-size: 15px;
   }
 
   #coffee-blurb-b {
     width: 40%;
-    font-size: 18px
+    font-size: 15px
   }
 
   #parlor-pic {
@@ -309,25 +309,29 @@ body {
     top: 10%
   }
 
+  #coffee-box-container {
+    position: relative;
+    width: 65%;
+    left: 17.5%
+  }
   .parlor-container {
-    width: 35%;
+    width: 49.78%;
     display: inline-block;
-    margin-left: 10%;
-    margin-top: 10px
   }
 
   .parlor-container-b {
-    width: 35%;
+    width: 49.78%;
     display: inline-block;
-    margin-left: 10%;
     height: 250px;
-    margin-top: 10px
   }
   .parlor-container-c  {
-    width: 35%;
+    width: 49.78%;
     display: inline-block;
-    margin-left: 10%;
-    margin-top: 10px
+  }
+
+  .white-container {
+    width: 49.78%;
+    display: inline-block
   }
 }
 
@@ -363,6 +367,18 @@ body {
   margin-left: 105px;
   margin-top: 20px;
   padding-top: 50px
+}
+
+@media all and (min-width: 1000px) {
+
+
+  #catering {
+    position: relative;
+    left: 45%;
+    margin: 0px;
+    top: 30px;
+    margin-bottom: 50px
+  }
 }
 
 h3 {
@@ -440,14 +456,27 @@ h3 {
 }
 
 @media all and (min-width: 1000px) {
+
+  #contentC {
+    width: 65%;
+    left: 17.5%
+  }
+  .c-container {
+    position: relative;
+    display: inline-block;
+    width: 20%;
+    margin: 0px 6% 0px 6%;
+    top: 0px;
+    height: 170px;
+  }
+
   #locations {
-    margin-top: 0px;
     text-align: center;
     font-family: 'Roboto Mono', monospace;
     font-weight: 100;
-    font-size: 25px;
+    font-size: 18px;
     position: relative;
-    left: -25%
+    left: -23%
   }
 
   #locA {
@@ -455,9 +484,9 @@ h3 {
     position: relative;
     font-family: 'Roboto Mono', monospace;
     font-weight: 100;
-    font-size: 13px;
+    font-size: 12px;
     text-align: center;
-    left: -25%
+    left: -23%
   }
 
   #locB {
@@ -466,9 +495,9 @@ h3 {
     top: 12px;
     font-family: 'Roboto Mono', monospace;
     font-weight: 100;
-    font-size: 13px;
+    font-size: 12px;
     text-align: center;
-    left: -25%
+    left: -23%
   }
 
   #hours-header {
@@ -476,8 +505,9 @@ h3 {
     font-family: 'Roboto Mono', monospace;
     font-weight: lighter;
     text-align: center;
-    font-size: 25px;
-    top: -40%
+    font-size: 18px;
+    top: 0px;
+    left: -3%
   }
 
   #hours-list {
@@ -487,7 +517,7 @@ h3 {
     font-weight: lighter;
     font-size: 13px;
     text-align: center;
-    top: -42%
+    left: -3%
   }
 
 
@@ -496,26 +526,22 @@ h3 {
     font-weight: lighter;
     text-align: center;
     position: relative;
-    top: -66%;
     left: 20%;
-    font-size: 25px
+    font-size: 18px
   }
 
   .social {
-    font-size: 30px;
+    font-size: 25px;
     position: relative;
-    top: 20px;
-    padding: 2px;
-    width: 28px;
-    text-align: center;
-    right: 0px
+    margin: 0px 5% 0px 5%;
+    left: 22%
   }
 
 }
 
 #rights {
   position: absolute;
-  bottom: 0%;
+  bottom: 1%;
   font-family: "Open Sans", sans-serif;
   width: 100%;
   font-size: 10px;
@@ -524,4 +550,15 @@ h3 {
   color: white;
   height: 20px;
   padding: 2px
+}
+
+@media all and (min-width: 1000px){
+  #rights {
+    font-size: 15px;
+    height: 25px;
+    width: 65%;
+    left: 17.5%;
+    background-color: white;
+    color: black
+  }
 }
