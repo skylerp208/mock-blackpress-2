@@ -63,9 +63,10 @@ body {
 #dropdown {
   position: absolute;
   right: 10px;
-  top: 53px;
+  top: 88%;
   z-index: 5;
   width: 90px;
+  pointer-events: none
 }
 
 .clicked-dropdown {
@@ -74,7 +75,8 @@ body {
   background-color: #333333;
   animation-name: drop;
   animation-duration: 300ms;
-  z-index: 20
+  z-index: 20;
+  pointer-events: all !important
 }
 
 .unclicked-dropdown {
@@ -83,6 +85,7 @@ body {
   height: 0px;
   width: 100px;
   background-color: #333333;
+  pointer-events: none !important
 }
 
 @keyframes drop {
@@ -115,16 +118,44 @@ body {
 
 @media all and (min-width: 1000px) {
   #logo {
-    width: 40%;
+    width: 30%;
     position: relative;
-    left: 22.5%
+    left: 15.3%;
+    top: 5px
   }
 
   #latte_art {
-    width: 50%;
+    width: 65%;
     position: relative;
-    left: 25%
+    left: 17.5%;
+    top: 10px
   }
+
+  #nav-underline {
+    position: relative;
+    top: -12px;
+    z-index: 4;
+    width: 65.9%;
+    border: 2px solid black
+  }
+
+  #bars {
+    right: 17%;
+    top: 32px;
+    font-size: 22px;
+  }
+
+  /* #dropdown {
+    position: absolute;
+    right: 17.5%;
+    top: 88%;
+    z-index: 5;
+    width: 10px;
+    height: 0px;
+    background-color: black;
+    pointer-events: none;
+  } */
+
 }
 
 #about-container {
@@ -149,13 +180,6 @@ body {
 }
 
 
-#contentC {
-  color: black;
-  height: 500px;
-  position: relative;
-  background-color: #fff;
-  padding-top: 30px
-}
 
 #aboutA {
   background-color: #222222;
@@ -259,6 +283,54 @@ body {
   left: 10%
 }
 
+@media all and (min-width: 1000px) {
+
+  #aboutA {
+    width: 90%;
+    left: 5%;
+    height: 600px
+  }
+  #our-coffee-b{
+    font-size: 25px
+  }
+  #coffee-blurb{
+    width: 40%;
+    font-size: 18px;
+  }
+
+  #coffee-blurb-b {
+    width: 40%;
+    font-size: 18px
+  }
+
+  #parlor-pic {
+    width: 48%;
+    left: 50%;
+    top: 10%
+  }
+
+  .parlor-container {
+    width: 35%;
+    display: inline-block;
+    margin-left: 10%;
+    margin-top: 10px
+  }
+
+  .parlor-container-b {
+    width: 35%;
+    display: inline-block;
+    margin-left: 10%;
+    height: 250px;
+    margin-top: 10px
+  }
+  .parlor-container-c  {
+    width: 35%;
+    display: inline-block;
+    margin-left: 10%;
+    margin-top: 10px
+  }
+}
+
 #menu-container {
   font-family: 'Roboto Mono', monospace;
 }
@@ -297,6 +369,14 @@ h3 {
   position: relative;
   margin-bottom: 30px;
   top: 10px;
+}
+
+#contentC {
+  color: black;
+  height: 500px;
+  position: relative;
+  background-color: #fff;
+  padding-top: 30px
 }
 
 #locations {
@@ -357,6 +437,80 @@ h3 {
   width: 28px;
   text-align: center;
   left: 135px
+}
+
+@media all and (min-width: 1000px) {
+  #locations {
+    margin-top: 0px;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 100;
+    font-size: 25px;
+    position: relative;
+    left: -25%
+  }
+
+  #locA {
+    list-style: none;
+    position: relative;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 100;
+    font-size: 13px;
+    text-align: center;
+    left: -25%
+  }
+
+  #locB {
+    list-style: none;
+    position: relative;
+    top: 12px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 100;
+    font-size: 13px;
+    text-align: center;
+    left: -25%
+  }
+
+  #hours-header {
+    position: relative;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 25px;
+    top: -40%
+  }
+
+  #hours-list {
+    list-style: none;
+    position: relative;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: lighter;
+    font-size: 13px;
+    text-align: center;
+    top: -42%
+  }
+
+
+  #follow-us {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: lighter;
+    text-align: center;
+    position: relative;
+    top: -66%;
+    left: 20%;
+    font-size: 25px
+  }
+
+  .social {
+    font-size: 30px;
+    position: relative;
+    top: 20px;
+    padding: 2px;
+    width: 28px;
+    text-align: center;
+    right: 0px
+  }
+
 }
 
 #rights {

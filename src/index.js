@@ -8,10 +8,37 @@ window.addEventListener('DOMContentLoaded', (e) => {
   isMobile = true
   }
 
-  //if on mobile, adds an event listener
+  //if on mobile, adds a dropdown animation toggled by clicking
   if (isMobile === true ) {
     document.querySelector('#bars').addEventListener('click', (e) => {
-      // document.querySelector('#bars').classList.toggle("clicked-bars")
+      if ( document.querySelector('#dropdown').classList[0] === "clicked-dropdown" ) {
+          document.querySelector('#dropdown').classList.toggle('unclicked-dropdown')
+          document.querySelector('#dropdown').classList.remove('clicked-dropdown')
+      } else {
+          document.querySelector('#dropdown').classList.toggle('clicked-dropdown')
+          document.querySelector('#dropdown').classList.remove('unclicked-dropdown')
+      }
+
+
+      document.querySelectorAll('.dropdown-item').forEach( (item) => {
+        item.classList.toggle('clicked-dropdown-item')
+      })
+    })
+  } else {
+    // if not on mobile, adds animation toggled by hovering
+    document.querySelector('#bars').addEventListener('mouseover', (e) => {
+      if ( document.querySelector('#dropdown').classList[0] === "clicked-dropdown" ) {
+          document.querySelector('#dropdown').classList.toggle('unclicked-dropdown')
+      } else {
+          document.querySelector('#dropdown').classList.toggle('clicked-dropdown')
+      }
+
+
+      document.querySelectorAll('.dropdown-item').forEach( (item) => {
+        item.classList.toggle('clicked-dropdown-item')
+      })
+    })
+    document.querySelector('#bars').addEventListener('mouseout', (e) => {
       if ( document.querySelector('#dropdown').classList[0] === "clicked-dropdown" ) {
           document.querySelector('#dropdown').classList.toggle('unclicked-dropdown')
       } else {
@@ -46,15 +73,6 @@ window.addEventListener('DOMContentLoaded', (e) => {
         hide(cont)
       }
     })
-    if ( document.querySelector('#dropdown').classList[0] === "clicked-dropdown" ) {
-          document.querySelector('#dropdown').classList.toggle('unclicked-dropdown')
-      } else {
-          document.querySelector('#dropdown').classList.toggle('clicked-dropdown')
-      }
-      document.querySelectorAll('.dropdown-item').forEach( (item) => {
-        item.classList.toggle('clicked-dropdown-item')
-      })
-
   }
 
   document.querySelector('#about-drop').addEventListener('click', (e) => {
